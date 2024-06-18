@@ -1,3 +1,142 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Genel stil */
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar stili */
+.sidebar {
+  width: 300px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.add-project-button {
+  margin-top: 20px;
+}
+
+.add-project-button button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-project-button button:hover {
+  background-color: #0056b3;
+}
+
+/* ProjectItem stili */
+.project-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.project-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* AddProjectForm stili */
+.add-project-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-project-form input,
+.add-project-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-project-form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-project-form button:hover {
+  background-color: #218838;
+}
+
+/* MainContent stili */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ProjectDetails stili */
+.project-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.project-details h2 {
+  margin-top: 0;
+}
+
+/* TaskItem stili */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #c82333;
+}
+
+/* AddTaskInput stili */
+.add-task-input {
+  display: flex;
+  margin-top: 20px;
+}
+
+.add-task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-task-input button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-input button:hover {
+  background-color: #0056b3;
+}

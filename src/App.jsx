@@ -1,10 +1,18 @@
-import ProjectsSidebar from "../components/ProjectsSidebar";
+import React, { useRef, useState } from "react";
+
+import ProjectsSidebar from "./components/ProjectsSidebar";
+import NewProject from "./components/NewProject";
+
 function App() {
-  con;
+  const [addProjectActive, setAddProjectActive] = useState(false);
+  function activeAddProject() {
+    setAddProjectActive(true);
+  }
   return (
-    <>
-      <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
-    </>
+    <main className="h-screen my-8 flex gap-8">
+      <ProjectsSidebar activeAddProject={activeAddProject} />
+      {addProjectActive && <NewProject />}
+    </main>
   );
 }
 
