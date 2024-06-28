@@ -20,7 +20,8 @@ export default function NewProject({
     if (!title || !description || !date) {
       dialogRef.current.showModal();
     } else {
-      const newProject = { title, description, date };
+      const id = Math.random() * 100;
+      const newProject = { title, description, date, id };
       setProjects([...projects, newProject]);
       setAddProjectActive(false);
     }
